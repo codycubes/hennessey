@@ -32,7 +32,7 @@ const Contact = () => {
                             
                         </div>
                         <div className="text-center">
-                            <button type="submit" className="w-full bg-orange-700 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Submit</button>
+                            <button type="submit" className="w-full text-white px-6 py-3 font-xl rounded-md sm:mb-0">Submit</button>
                         </div>
                     </form>
                 </div>
