@@ -13,21 +13,24 @@ import SlideCard from "../SlideCard/SlideCard";
 
 const DisplaySilde = ({ heading, subHeading, data, hide }) => {
   return (
-    <section className="flex flex-col justify-center sm:flex-row md:items-center md:h-full gap-5 p-5 my-10">
-      <section className="border-2 border-black p-4 flex-col justify-center  md:flex md:h-[50%] md:w-[20%]">
-        <section className="text-3xl mb-4">{heading}</section>
-        <section className={`${hide}`}>{subHeading}</section>
-        <button className={`mr-auto my-3 py-3 px-2  ${hide}`}>
+    <section className="h-full flex flex-col justify-center my-20 md: ">
+      <section className="p-5 sm:w-[50%] h-[50%]">
+        <h2 className="my-5">{heading}</h2>
+
+        <section className={`text-3xl my-5${hide} h-fit`}>{subHeading}</section>
+        <button className={`p-3  ${hide}`}>
           Discover the entire collection
         </button>
       </section>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        {data.map((info, index) => (
-          <SwiperSlide key={index}>
-            <SlideCard imageURL={info.imageURL} text={info.text} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <section className="border-2h-full md:h-screen">
+        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          {data.map((info, index) => (
+            <SwiperSlide key={index}>
+              <SlideCard imageURL={info.imageURL} text={info.text} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
     </section>
   );
 };

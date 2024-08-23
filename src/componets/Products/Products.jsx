@@ -4,24 +4,24 @@ import React from "react";
 const Products = () => {
   const products = [
     {
-      imageURL: "products/31.jpg",
+      imageURL: "30.jpg",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
     },
     {
-      imageURL: "products/32.jpg",
+      imageURL: "32.jpg",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
     },
     {
-      imageURL: "products/33.jpg",
+      imageURL: "33.jpg",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
     },
     {
-      imageURL: "products/34.jpg",
+      imageURL: "31.jpg",
       text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
     },
   ];
   return (
-    <section className="h-screen flex flex-col justify-center ">
+    <section className="min-h-screen flex flex-col justify-center ">
       <DisplaySilde
         hide=""
         subHeading="The Art of Cognac"
