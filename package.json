@@ -10,9 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@react-icons/all-files": "^4.1.0",
+=======
+    "framer-motion": "^11.3.29",
+>>>>>>> d3a1473b9ff9e8c7c707e1d4299d1632ec13db72
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-slideshow-image": "^4.3.1",
+    "swiper": "^11.1.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

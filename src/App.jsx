@@ -13,7 +13,7 @@ function App() {
       <About />
       <Testimonials />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 }
