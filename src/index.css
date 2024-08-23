@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  h2 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+}
