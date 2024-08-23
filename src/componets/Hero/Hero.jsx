@@ -75,11 +75,11 @@ const Hero = () => {
   }, [scrolling]);
 
   return (
-    <div ref={containerRef} className="relative w-full h-[300vh]">
+    <div ref={containerRef} className="relative w-full h-[300vh] sm:w-full md:w-full">
       <div className="sticky top-0 w-full h-screen">
         <video
           ref={videoRef}
-          className="w-full h-full object-cover"
+          className="w-full h-full sm:w-full md:w-full object-cover"
           src="/testVideo.mp4"
           muted
         />
@@ -97,7 +97,7 @@ const Hero = () => {
 
           {/* Second Section: Hennessy Related Random Text */}
           <div className={`transition-opacity duration-500 ${scrollY > 200 && scrollY <= 1200 ? 'opacity-100' : 'opacity-0'}`}>
-            <p className=" items-center w-5/12 text-xl md:text-2xl">
+            <p className=" items-center w-5/12 px-8 text-xl md:text-2xl">
               Hennessy, renowned for its exceptional cognac, epitomizes centuries of craftsmanship and tradition. Each sip tells a story of heritage and excellence, blending the finest ingredients with meticulous artistry.
             </p>
           </div>
