@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 
-const HeroSection = () => {
+const Hero = () => {
   const videoRef = useRef(null);
   const containerRef = useRef(null);
   const [scrollY, setScrollY] = useState(0);
@@ -83,23 +83,38 @@ const HeroSection = () => {
           src="/testVideo.mp4"
           muted
         />
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-          <h1 className={`text-6xl md:text-9xl font-bold mb-8 ${scrollY > 200 ? 'opacity-0' : 'opacity-100'}`}>
-            HENNESSY: A JOURNEY THROUGH TIME
-          </h1>
-          <h2 className={`text-2xl md:text-4xl font-light ${scrollY > 600 ? 'opacity-100' : 'opacity-0'}`}>
-            CRAFTED THROUGH GENERATIONS
-          </h2>
-          <h2 className={`text-2xl md:text-4xl font-light ${scrollY > 1200 ? 'opacity-100' : 'opacity-0'}`}>
-            THE SPIRIT OF EXCELLENCE
-          </h2>
-          <h2 className={`text-2xl md:text-4xl font-light ${scrollY > 1800 ? 'opacity-100' : 'opacity-0'}`}>
-            A LEGACY, A PASSION
-          </h2>
+        <div className="absolute top-80 inset-0 flex flex-col items-center justify-center text-center text-white">
+          
+          {/* First Section: Hero Title and Subtitle */}
+          <div className={`transition-opacity duration-500 ${scrollY <= 200 ? 'opacity-100' : 'opacity-0'}`}>
+            <h2 className="text-sm md:text-2xl font-light">
+              CRAFTED THROUGH GENERATIONS
+            </h2>
+            <h1 className="text-6xl md:text-5xl font-bold mb-8">
+              HENNESSY: A JOURNEY THROUGH TIME
+            </h1>
+          </div>
+
+          {/* Second Section: Hennessy Related Random Text */}
+          <div className={`transition-opacity duration-500 ${scrollY > 200 && scrollY <= 1200 ? 'opacity-100' : 'opacity-0'}`}>
+            <p className=" items-center w-5/12 text-xl md:text-2xl">
+              Hennessy, renowned for its exceptional cognac, epitomizes centuries of craftsmanship and tradition. Each sip tells a story of heritage and excellence, blending the finest ingredients with meticulous artistry.
+            </p>
+          </div>
+
+          {/* Third Section: Additional Text */}
+          <div className={`transition-opacity items-center justify-center  duration-500 ${scrollY > 1200 ? 'opacity-100' : 'opacity-0'}`}>
+            <h2 className="text-2xl items-center justify-center text-center md:text-4xl font-light">
+              THE SPIRIT OF EXCELLENCE
+            </h2>
+            <h2 className="text-2xl md:text-4xl font-light">
+              A LEGACY, A PASSION
+            </h2>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HeroSection;
+export default Hero;
