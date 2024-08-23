@@ -11,19 +11,19 @@ const Contact = () => {
                         <div className="mb-6">
                             <div className="mx-0 mb-1 sm:mb-4">
                             <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your Email Address" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  dark:text-gray-300 sm:mb-0" name="Your Email Address"/>
+                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your Email Address" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  text-white sm:mb-0" name="Your Email Address"/>
                                 </div>
                                 <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  dark:text-gray-300 sm:mb-0" name="Your Nane"/>
+                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4 text-white sm:mb-0" name="Your Nane"/>
                                 </div>
                                 <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Phone Number" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  dark:text-gray-300 sm:mb-0" name="Your Nane"/>
+                                    <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Phone Number" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  text-white sm:mb-0" name="Your Nane"/>
                                 </div>
                                 <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Date of Birth" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  dark:text-gray-300 sm:mb-0" name="email"/>
+                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Date of Birth" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  text-white sm:mb-0" name="email"/>
                                 </div>
                                 <div className="mx-0 mb-1 sm:mb-4">
-                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Country" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  dark:text-gray-300 sm:mb-0" name="email"/>
+                                    <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Country" className="mb-2 w-full rounded-md border border-black py-2 pl-2 pr-4  text-white sm:mb-0" name="email"/>
                                 </div>
                             </div>
                             <div className="mx-0 mb-1 sm:mb-4">
