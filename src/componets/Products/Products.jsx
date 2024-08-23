@@ -3,10 +3,22 @@ import React from "react";
 
 const Products = () => {
   const products = [
-    { imageURL: "", text: "" },
-    { imageURL: "", text: "" },
-    { imageURL: "", text: "" },
-    { imageURL: "", text: "" },
+    {
+      imageURL: "products/31.jpg",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
+    },
+    {
+      imageURL: "products/32.jpg",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
+    },
+    {
+      imageURL: "products/33.jpg",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
+    },
+    {
+      imageURL: "products/34.jpg",
+      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
+    },
   ];
   return (
     <section className="h-screen flex flex-col justify-center ">
