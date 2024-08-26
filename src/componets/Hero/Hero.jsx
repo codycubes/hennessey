@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState } from "react";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -31,14 +31,20 @@ const Hero = () => {
     if (videoRef.current) {
       const video = videoRef.current;
       const containerHeight = containerRef.current.clientHeight;
-      const scrollRatio = Math.min(Math.max(currentScrollY / containerHeight, 0), 1);
+      const scrollRatio = Math.min(
+        Math.max(currentScrollY / containerHeight, 0),
+        1
+      );
 
       // Set the target time for smooth transition
       setTargetTime(scrollRatio * video.duration);
 
       // Adjust playback speed and clamp it to a valid range
       const speedFactor = 0.005;
-      const playbackRate = Math.max(0.75, Math.min(1.5, scrollSpeed * speedFactor));
+      const playbackRate = Math.max(
+        0.75,
+        Math.min(1.5, scrollSpeed * speedFactor)
+      );
       video.playbackRate = playbackRate;
 
       // Trigger smooth transition
@@ -67,15 +73,18 @@ const Hero = () => {
       }
     };
 
-    window.addEventListener('scroll', scrollListener);
+    window.addEventListener("scroll", scrollListener);
     return () => {
-      window.removeEventListener('scroll', scrollListener);
+      window.removeEventListener("scroll", scrollListener);
       clearTimeout(handleScrollStop.timeout);
     };
   }, [scrolling]);
 
   return (
-    <div ref={containerRef} className="relative w-full h-[300vh] sm:w-full md:w-full">
+    <div
+      ref={containerRef}
+      className="relative w-full h-[300vh] sm:w-full md:w-full"
+    >
       <div className="sticky top-0 w-full h-screen">
         <video
           ref={videoRef}
@@ -84,9 +93,12 @@ const Hero = () => {
           muted
         />
         <div className="absolute top-80 inset-0 flex flex-col items-center justify-center text-center text-white">
-          
           {/* First Section: Hero Title and Subtitle */}
-          <div className={`transition-opacity duration-500 ${scrollY <= 200 ? 'opacity-100' : 'opacity-0'}`}>
+          <div
+            className={`transition-opacity duration-500 ${
+              scrollY <= 200 ? "opacity-100" : "opacity-0"
+            }`}
+          >
             <h2 className="text-sm md:text-2xl font-light">
               CRAFTED THROUGH GENERATIONS
             </h2>
@@ -96,21 +108,28 @@ const Hero = () => {
           </div>
 
           {/* Second Section: Hennessy Related Random Text */}
-          <div className={`transition-opacity duration-500 ${scrollY > 200 && scrollY <= 1200 ? 'opacity-100' : 'opacity-0'}`}>
+          <div
+            className={`transition-opacity duration-500 ${
+              scrollY > 200 && scrollY <= 1200 ? "opacity-100" : "opacity-0"
+            }`}
+          >
             <p className=" items-center w-5/12 px-8 text-xl md:text-2xl">
-              Hennessy, renowned for its exceptional cognac, epitomizes centuries of craftsmanship and tradition. Each sip tells a story of heritage and excellence, blending the finest ingredients with meticulous artistry.
+              Hennessy, renowned for its exceptional cognac, epitomizes
+              centuries of craftsmanship and tradition. Each sip tells a story
+              of heritage and excellence, blending the finest ingredients with
+              meticulous artistry.
             </p>
           </div>
 
           {/* Third Section: Additional Text */}
-          <div className={`transition-opacity items-center justify-center  duration-500 ${scrollY > 1200 ? 'opacity-100' : 'opacity-0'}`}>
+          {/* <div className={`transition-opacity items-center justify-center  duration-500 ${scrollY > 1200 ? 'opacity-100' : 'opacity-0'}`}>
             <h2 className="text-2xl items-center justify-center text-center md:text-4xl font-light">
               THE SPIRIT OF EXCELLENCE
             </h2>
             <h2 className="text-2xl md:text-4xl font-light">
               A LEGACY, A PASSION
             </h2>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

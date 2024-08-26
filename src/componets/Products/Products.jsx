@@ -1,33 +1,10 @@
-import DisplaySilde from "../DisplaySlide/DisplaySilde";
-import React from "react";
-
 const Products = () => {
-  const products = [
-    {
-      imageURL: "30.jpg",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
-    },
-    {
-      imageURL: "32.jpg",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
-    },
-    {
-      imageURL: "33.jpg",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
-    },
-    {
-      imageURL: "31.jpg",
-      text: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, excepturi.",
-    },
-  ];
   return (
-    <section className="min-h-screen flex flex-col justify-center ">
-      <DisplaySilde
-        hide=""
-        subHeading="The Art of Cognac"
-        heading="The Collection"
-        data={products}
-      />
+    <section className="h-screen border-2">
+      <section className="h-full border-2 border-red-500 md:flex md:items-center">
+        <section className=" h-[20%] w-full border-2 border-blue-500 md:w-[40%] lg:w-[30%]"></section>
+        <section className="h-[80%] w-full border-2 border-green-500 md:w-[60%] lg:w-[70%] lg:h-full"></section>
+      </section>
     </section>
   );
 };
